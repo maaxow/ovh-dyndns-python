@@ -1,3 +1,6 @@
+# Informations
+
+This script auto update your public IP to your ovh dns A domain.
 
 # Pre requists
 
