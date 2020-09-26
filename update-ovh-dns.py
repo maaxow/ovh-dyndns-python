@@ -4,8 +4,8 @@ import sys
 from datetime import datetime
 from requests import get
 
-if len(sys.argv) == 1:
-  sys.exit("Missing argument : python3 update-ovh-dns.py <domain>")
+if len(sys.argv) != 2:
+  sys.exit("[ERROR] Invalid numbers of arguments.\n\t Usage : python3 update-ovh-dns.py <domain>")
 
 domain = sys.argv[1]
 ip = get('https://api.ipify.org').text
